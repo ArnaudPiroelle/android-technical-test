@@ -15,4 +15,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "AndroidTechnicalTest"
 include(":app")
- 
+include(":domain")
+include(":data")

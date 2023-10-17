@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AndroidTechnicalTest</string>
+    <string name="home_title">Catalog</string>
+    <string name="action_play">Play album</string>
 </resources>
