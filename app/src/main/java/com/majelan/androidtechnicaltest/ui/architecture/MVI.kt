@@ -27,7 +27,7 @@ abstract class BaseViewModel<A : BaseAction, S : BaseState, E : BaseSideEffect> 
         onHandle(action)
     }
 
-    protected fun dispatchSideEffect(sideEffect: E) {
+    protected fun dispatchSideEffect(sideEffect: E) = viewModelScope.launch {
         internalSideEffect.tryEmit(sideEffect)
     }
 }
